@@ -1,0 +1,128 @@
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes neonflicker {
+    0%   {opacity: 1}
+    24.99% {opacity: 1}
+    25%  {opacity: .2}
+    25.2%  {opacity: .9}
+    25.4%  {opacity: .2}
+    25.7%  {opacity: .7}
+    25.8%  {opacity: 1}
+    75%  {opacity: 1}
+    75.1%  {opacity: .2}
+    79%  {opacity: .2}
+    79.1%  {opacity: 1}
+    100% {opacity: 1}
+}
+
+/* Standard syntax */
+@keyframes neonflicker {
+    0%   {opacity: 1}
+    24.99% {opacity: 1}
+    25%  {opacity: .2}
+    25.2%  {opacity: .9}
+    25.4%  {opacity: .2}
+    25.7%  {opacity: .7}
+    25.8%  {opacity: 1}
+    75%  {opacity: 1}
+    75.1%  {opacity: .2}
+    79%  {opacity: .2}
+    79.1%  {opacity: 1}
+    100% {opacity: 1}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes dreamflicker {
+ 0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    opacity:0.99; text-shadow: 0 0 5px #ff66ff, 0 0 20px #cc66ff, 0 0 100px #7733ff;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+    opacity:0.4; text-shadow: none; 
+  }
+}
+
+/* Standard syntax */
+@keyframes dreamflicker {
+ 0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    opacity:0.99; text-shadow: 0 0 5px #ff66ff, 0 0 20px #cc66ff, 0 0 100px #7733ff;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+    opacity:0.4; text-shadow: none; 
+  }
+}
+
+
+body {
+    background-color: #000!important;
+}
+
+.grid-container {
+    
+    font-weight:100;
+    text-align:center;
+}
+
+.container {
+    padding-top:200px;
+    
+}
+
+.neon {
+    font-family:helvetica;
+    color:#ffe6ff;
+    text-shadow: 0 0 5px #ff99c2, 0 0 20px #ff3399, 0 0 100px #ff80bf;
+    font-size:80px;
+    line-height: 70px;
+}
+
+.dream  {
+    font-family:Pacifico;
+    color:#ffe6ff;
+    text-shadow: 0 0 5px #ff66ff, 0 0 20px #cc66ff, 0 0 100px #7733ff;
+    font-size:150px;
+    font-style: italic;
+    margin-left:-120px;
+    margin-top:-40px;
+    position: relative;
+    
+}
+
+.neon span {
+    opacity: .4;
+    -webkit-animation: neonflicker 10s infinite;
+    animation: neonflicker 10s infinite;
+}
+
+.dream span:nth-child(1) {
+    opacity: .3;
+    text-shadow: none; 
+}
+
+.dream span:nth-child(2) {
+    opacity: .4;
+    -webkit-animation: dreamflicker 5s infinite;
+    animation: dreamflicker 5s infinite;
+}
+
+.button {
+    background-color:#595959;
+    color:#ffe6ff;
+    box-shadow: 0 0 20px #ffe6ff;
+    border-radius: 10%;
+    padding:10px 20px;
+    width:60px;
+    font-family:monospace;
+    margin:100px auto;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:active {
+  background-color: #333;
+  
+  transform: translateY(4px);
+    
+}
+
